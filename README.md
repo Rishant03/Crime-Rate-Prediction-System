@@ -7,6 +7,7 @@ It helps law enforcement agencies, researchers, and policymakers to understand *
 
 The system is built using **Flask** (backend), **scikit-learn Random Forest Regression** (ML model), and **HTML/CSS/Jinja2** (frontend).
 
+<img width="1889" height="904" alt="project_ss" src="https://github.com/user-attachments/assets/aab2c983-8d72-4e9f-b1e8-9943e7ab8f99" />
 
 
 🚀 Features
@@ -105,13 +106,6 @@ python validate_model.py
  ✅ Confirms the model loads correctly
  ✅ Ensures prediction works on sample data
 
-
-
-📸 Screenshots
-
-
-
-<img width="1889" height="904" alt="project_ss" src="https://github.com/user-attachments/assets/128bb8f8-09b9-41f8-9f25-14ecb4f7a56f" />
 
 
 📈 Future Improvements
