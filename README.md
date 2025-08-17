@@ -1,65 +1,132 @@
-# Crime-Rate-Prediction-System
-# Crime Rate Predictor - Unlock Safety: Reduce Crime Rate Together
+📌 Crime Rate Prediction System
 
-Crime Rate Predictor is an application that uses machine learning techniques to predict crime rates in 19 Indian metropolitan cities. The goal of this project is to assist law enforcement agencies in understanding crime patterns and allocating resources effectively to reduce crime rates and improve public safety.
+ 📖 Overview
 
-## About the Application
+Crime Rate Predictor is a **Machine Learning powered web application** that predicts the likelihood of crimes in **19 Indian metropolitan cities**.
+It helps law enforcement agencies, researchers, and policymakers to understand **crime patterns** and take proactive measures for **resource allocation and public safety**.
 
-Crime rate prediction has become an important tool for law enforcement agencies to help them better understand patterns of crime and anticipate where crime is likely to occur. By predicting future crime trends, law enforcement agencies can better allocate resources to areas that are likely to experience increases in criminal activity. This could lead to a decrease in crime overall, as well as an increase in public safety. Additionally, crime rate prediction can help police departments develop better strategies for responding to crime as it happens.
+The system is built using **Flask** (backend), **scikit-learn Random Forest Regression** (ML model), and **HTML/CSS/Jinja2** (frontend).
 
-The dataset is prepared manually based on the publication available on the Indian National Crime Rate Bureau (NCRB) official website. This data provides statistics on crimes committed in 19 metropolitan cities during the year 2014 to 2021. With the help of this application, we can predict the crime rates for 10 different categories of crime that are likely to occur in 19 Indian metropolitan cities over the next few years. It includes statistics on 10 different categories of crime, including murder, kidnapping, crime against women, crime against children, crime committed by juveniles, crime against senior citizens, crime against SC, crime against ST, economic offences, and cybercrimes.
 
-The system uses scikit-learn's Random Forest Regression model, which takes year, city name, and crime type data as inputs. Random Forest Regression is a type of an ensemble learning techniques that can be used to predict continuous values from a collection of data. It works by creating a large number of "decision trees" which each make a prediction about the target variable. Then it averages all the predictions to come up with a final prediction. This makes it more accurate than a single decision tree. The model predicts the crime rate with an accuracy of 93.20% on the testing dataset.
 
-## Features
+🚀 Features
 
-- Crime rate prediction for 10 different categories of crime
-- Prediction for 19 Indian metropolitan cities
-- Historical crime data from 2014 to 2021
-- Random Forest Regression model for accurate predictions
-- Model accuracy of 93.20% on testing dataset
+ 🔎 Predicts crime rates for **10 crime categories**
+ 🏙️ Covers **19 major Indian cities**
+ 📊 Uses **historical NCRB crime data (2014–2021)**
+ 🤖 **Random Forest Regression model** with **93.2% accuracy**
+ 🌍 User-friendly **Flask web interface**
+ 📈 Estimates both **crime rate** and **expected number of cases**
+ 📌 Classifies areas as:
 
-## Installation
+   Very Low Crime
+   Low Crime
+   High Crime
+   Very High Crime
 
-1. Clone the repository:
 
-   ```shell
-   git clone 
 
-2. Navigate to the project directory:
+🧩 Crime Categories
 
-   ```shell
+1. Crime Committed by Juveniles
+2. Crime Against Scheduled Castes (SC)
+3. Crime Against Scheduled Tribes (ST)
+4. Crime Against Senior Citizens
+5. Crime Against Children
+6. Crime Against Women
+7. Cyber Crimes
+8. Economic Offences
+9. Kidnapping
+10. Murder
+
+
+
+🏗️ Tech Stack
+
+**Frontend:** HTML, CSS, Jinja2
+**Backend:** Flask (Python)
+**Machine Learning:** scikit-learn (Random Forest Regressor)
+**Server:** Gunicorn (for deployment)
+**Dataset:** NCRB (2014–2021 crime statistics for 19 cities)
+
+
+
+⚙️ Installation & Setup
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/Crime-Rate-Prediction.git
    cd Crime-Rate-Prediction
+   ```
 
-3. Install the required dependencies:
+2. **Install Dependencies**
 
-   ```shell
+   ```bash
    pip install -r requirements.txt
-   
-4. Run the application:
+   ```
 
-   ```shell
+3. **Run the Application**
+
+   ```bash
    python app.py
+   ```
+
+4. **Open in Browser**
+
+   ```
+   http://127.0.0.1:5000/
+   ```
+
+---
+
+🎯 Usage
+
+1. Select a **City** from the dropdown.
+2. Choose a **Crime Type** (e.g., Cyber Crimes, Murder).
+3. Enter a **Year** (e.g., 2025).
+4. Click on **Predict** → The app will show:
+
+   * Predicted crime rate
+   * Estimated number of cases
+   * City & crime details
+   * Crime severity classification
 
 
-## Usage
 
-- Launch the application by running `app.py`.
-- Select the desired city, crime type, and year for which you want to predict the crime rate.
-- Click on the "Predict" button to generate the crime rate prediction.
-- The predicted crime rate will be displayed on the screen.
+📊 Model Validation
 
-## Contributing
+Run the model validation script:
 
-Contributions are welcome! If you want to contribute to this project, please follow these steps:
+```bash
+python validate_model.py
+```
 
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Make the necessary changes and commit them.
-- Submit a pull request, clearly explaining the changes you made.
+ ✅ Confirms the model loads correctly
+ ✅ Ensures prediction works on sample data
 
-Please ensure that your contributions adhere to the project's coding conventions and are accompanied by appropriate tests.
 
-## Contact
 
-If you have any questions, suggestions, or issues regarding this project, please feel free to [contact me](mailto:rishantraj03@gmail.com).
+📸 Screenshots
+
+
+
+<img width="1889" height="904" alt="project_ss" src="https://github.com/user-attachments/assets/128bb8f8-09b9-41f8-9f25-14ecb4f7a56f" />
+
+
+📈 Future Improvements
+
+* Expand dataset to cover **more cities and years**
+* Add **visualizations & trend graphs**
+* Integrate **real-time police/incident data**
+* Deploy on **cloud (Heroku/AWS/GCP)**
+
+
+👨‍💻 Author
+
+Rishant Raj
+📧 [rishantraj03@gmail.com](mailto:rishantraj03@gmail.com)
+https://www.linkedin.com/in/rishant-raj-a7974224b
+
+
+
